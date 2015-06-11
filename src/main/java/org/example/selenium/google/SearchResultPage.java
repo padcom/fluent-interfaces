@@ -3,7 +3,7 @@ package org.example.selenium.google;
 import java.util.List;
 
 import org.example.selenium.Page;
-import org.example.selenium.tvn24.Tvn24HomePage;
+import org.example.selenium.github.GitHubHomePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,8 +27,8 @@ public class SearchResultPage extends Page {
 		return new SearchResultPage(driver);
 	}
 
-	public Tvn24HomePage selectNthResult(int n) {
+	public GitHubHomePage selectNthResult(int n) {
 		results.get(n).click();
-		return new Tvn24HomePage(driver);
+		return new GitHubHomePage(driver);
 	}
 }
